@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./images/Logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Big Grill</title>
+    <script type="module" src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="flex">
+    <div class="app">
+        <div class="overlay"></div>
+
+        <header class="header flex">
+            <img src="./images/Logo.png" class="logo">
+            <h1 class="title">Big Grill's menu</h1>
+        </header>
+
+        <main class="main flex">
+
+            <div class="big-img-container" id="big-img-container">
+                <!-- Render in JS -->
+            </div>
+
+            <section class="menu-section" id="menu-section">
+                <!-- Render in JS -->
+            </section>
+
+            <section class="order-section">
+                <h2>Your order</h2>
+
+                <div class="order-container" id="order-container">
+                    <!-- Render in JS -->
+                </div>
+
+                <hr>
+
+                <div class="total-price-box flex">
+                    <p>Total price</p>
+                    <p class="total-price" id="total-price">$0</p>
+                </div>
+
+                <button id="place-order" class="place-order">Place Order</button>
+
+            </section>
+
+            <section class="check-out-section flex" id="check-out-section">
+
+                <i class="fa-solid fa-circle-xmark close-form" id="close-form"></i>
+
+                <!-- Render in JS -->
+                <!-- 
+                <i class="fa-solid fa-circle-xmark close-form" id="close-form"></i>
+                <h4>Your order is on the way</h4>
+                <img src="./images/giphy.gif" class="on-the-way"> 
+                -->
+                
+                <form id="pay-form" action="submit" class="flex">
+                    <h4>Enter your card details</h4>
+                    <input 
+                        type="text" 
+                        name="name" 
+                        id="name" 
+                        placeholder="Enter your name" 
+                        required>
+                    <input 
+                        type="text" 
+                        name="card-number" 
+                        id="card-number" 
+                        placeholder="Enter your card number" 
+                        required>
+                    <input 
+                        type="text" 
+                        name="CVV" 
+                        id="CVV" 
+                        placeholder="Enter CVV" 
+                        required>
+
+                    <button type="submit" class="pay" id="pay">Pay</button>
+                </form>
+            </section>
+        </main>
+
+    </div>
+    <script src="https://kit.fontawesome.com/53af5e9bb6.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
